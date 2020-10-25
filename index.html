@@ -1,74 +1,45 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)https://pokemondb.net/sprites -->
+<!-- Saved from url=(0029)https://pokemondb.net/sprites -->
+<!-- Optimized code by andy0dvlpr on GitHub -->
 <html lang="en">
-	<link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+	<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+	<style type="text/css" id="dark-mode-custom-style"></style>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>PokeDex │ Home</title>
+		<script src="includeHTML.js"></script> <!-- Load the script for HTML inclusion. -->
+		<link rel="preconnect" href="https://fonts.gstatic.com/">
+		<link rel="preconnect" href="https://img.pokemondb.net/">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="./PokeDex_files/rotomd.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:description" name="description" content="A huge gallery of sprites for every Pokémon, archived all the way back to the original Red/Blue">
+		<script async="" src="./PokeDex_files/analytics.js.download"></script>
 		<script>
-            function includeHTML() {
-              var z, i, elmnt, file, xhttp;
-              /* Loop through a collection of all HTML elements: */
-              z = document.getElementsByTagName("*");
-              for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                  /* Make an HTTP request using the attribute value as the file name: */
-                  xhttp = new XMLHttpRequest();
-                  xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                      /* Remove the attribute, and call this function once more: */
-                      elmnt.removeAttribute("w3-include-html");
-                      includeHTML();
-                    }
-                  }
-                  xhttp.open("GET", file, true);
-                  xhttp.send();
-                  /* Exit the function: */
-                  return;
-                }
-              }
-            }
-        </script>
-<title>PokeDex │ Home</title>
-<link rel="preconnect" href="https://fonts.gstatic.com/">
-<link rel="preconnect" href="https://img.pokemondb.net/">
-<link rel="stylesheet" href="./PokeDex_files/pokemondb-df5c50e34c.css">
-<link rel="icon" href="./PokeDex_files/rotomd.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:description" name="description" content="A huge gallery of sprites for every Pokémon, archived all the way back to the original Red/Blue">
-<script async="" src="./PokeDex_files/analytics.js.download"></script><script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-1974891-7', 'auto');
-		ga('send', 'pageview');
-	</script>
-<noscript>
-		<style>.main-menu-item:hover > .main-menu-sub { visibility: visible; opacity: 1; }</style>
-	</noscript>
-<link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css"></head>
-<body data-gr-c-s-loaded="true">
-<script async="" src="./PokeDex_files/f.txt"></script>
-<main id="main" class="main-content grid-container">
-<ul class="list-nav panel panel-nav">
-	<li>PokéDex</li>
-	<li><a href="./index.html">Main</a></li>
-	<li><a href="./indexshiny.html">Shiny</a></li>
-	</ul>
-<hr>
-<div w3-include-html="pokemon.html"></div>
-</div>
-</style>
-</div>
-</main>
-<script>var localDbVersions = 33;</script>
-<script src="./PokeDex_files/jquery-5928781455.min.js.download"></script>
-<script src="./PokeDex_files/global-12be8f2d42.js.download"></script>
-
-<script>
-	includeHTML();
-</script>
-</body></html>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-1974891-7', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<noscript>
+			<style>.main-menu-item:hover > .main-menu-sub { visibility: visible; opacity: 1; }</style>
+		</noscript>
+	</head>
+	<body data-gr-c-s-loaded="true">
+		<script async="" src="./PokeDex_files/f.txt"></script>
+		<main id="main" class="main-content grid-container">
+			<ul class="list-nav panel panel-nav">
+				<li>PokéDex</li>
+				<li><a href="./index.html">Main</a></li>
+				<li><a href="./indexshiny.html">Shiny</a></li>
+			</ul>
+			<hr>
+			<div w3-include-html="pokemon.html"></div> <!-- Include pokemon.html -->
+		</main>
+		<script>var localDbVersions = 33;</script>
+		<script>includeHTML();</script> <!-- Trigger the HTML inclusion script.-->
+	</body>
+</html>
