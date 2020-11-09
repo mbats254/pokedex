@@ -1636,7 +1636,7 @@ td>.infocard-list{
 }
 .infocard-list-pkmn-sm>.infocard{
     width:90px;
-    color:white;
+    color:#333333;
     font-size:.75rem
 }
 .infocard-list-trainers>.infocard{
