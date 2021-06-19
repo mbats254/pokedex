@@ -25,4 +25,27 @@ function includeHTML() {
         return;
       }
     }
+
+    var anchorTags = document.getElementsByClassName("infocard");
+    for (var i = 0; i < anchorTags.length; i++) {
+      anchorTags[i].onclick = function () {
+        this.classList.toggle("highlight");
+      };
+    }
+
+    var anchorTags = document.querySelectorAll("a");
+    for (var i = 0; i < anchorTags.length; i++) {
+      anchorTags[i].onclick = function () {
+        localStorage.removeItem("thispage");
+        this.classList.toggle("highlight");
+        localStorage.setItem("saved", "yes");
+        localStorage["thispage"] = document.querySelector("div").innerHTML;
+      };
+    }
+  
+    if (localStorage.getItem("saved") !== null) {
+      document.querySelector("div").innerHTML = localStorage["thispage"];
+      localStorage.removeItem("saved"); //returns to original state on second refresh.
+      document.querySelector("div").innerHTML = localStorage["thispage"];
+    }
 }
